@@ -84,19 +84,19 @@ class ViewController: UIViewController {
     }
     
     func checkingPassword() {
+        countSameNumbers = 0
         for number in 0..<staticPassword.count {
             if staticPassword[number] == password[number] {
                countSameNumbers += 1
             }
         }
-        
-        if countSameNumbers == 4 {
-            sucessfulLabel.text = "Вход выполнен успешно"
-            showSuccessfulLabel()
-        } else if countSameNumbers < 4 {
+        if countSameNumbers < 4 {
             sucessfulLabel.text = "Неправильный пароль"
             showSuccessfulLabel()
-        } else {
+        } else if countSameNumbers == 4 {
+             sucessfulLabel.text = "Вход выполнен успешно"
+             showSuccessfulLabel()
+         } else {
             sucessfulLabel.text = "Вы уже ввели пароль"
             showSuccessfulLabel()
         }
