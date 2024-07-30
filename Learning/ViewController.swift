@@ -44,16 +44,20 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var removeLastNumber: UIButton!
     
+    @IBOutlet weak var showPasswordButton: UIButton!
+        
+    @IBOutlet weak var currentPassword: UILabel!
+    
     var password : [Int] = []
     
-    let staticPassword = [1, 2, 3, 4]
+    var staticPassword : [Int] = [1, 2, 3, 4]
     
     var countSameNumbers = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var numberButtons : [UIButton] = [numberOne, numberTwo, numberThree, numberFour, numberFive, numberSix, numberSeven, numberEight, numberNine, numberNull]
+        let numberButtons : [UIButton] = [numberOne, numberTwo, numberThree, numberFour, numberFive, numberSix, numberSeven, numberEight, numberNine, numberNull]
         
         for button in numberButtons {
             button.addTarget(self, action: #selector(numberTapped(_ :)), for: .touchUpInside)
@@ -61,6 +65,7 @@ class ViewController: UIViewController {
         
         clearButton.addTarget(self, action: #selector(clearButtonTapped), for: .touchUpInside)
         removeLastNumber.addTarget(self, action: #selector(removeLastNum), for: .touchUpInside)
+        showPasswordButton.addTarget(self, action: #selector(showCurrentPassword), for: .touchUpInside)
     }
     
     func hideMessageLabel(_ hide : Bool = true) {
@@ -68,7 +73,11 @@ class ViewController: UIViewController {
     }
     
     func showSuccessfulLabel(_ hide : Bool = false) {
-            sucessfulLabel.isHidden = hide
+        let circlesArray : [UIButton] = [firstCircle, secondCircle, thirdCircle, fourthCircle]
+        sucessfulLabel.isHidden = hide
+        for circle in circlesArray {
+            circle.isHidden = !hide
+        }
     }
     
     func appendPassword(_ button : UIButton) {
@@ -103,6 +112,7 @@ class ViewController: UIViewController {
     }
     
     @objc func clearButtonTapped() {
+        currentPassword.isHidden = true
         showSuccessfulLabel(true)
         hideMessageLabel(false)
         makeColorCircle(0.3)
@@ -125,12 +135,19 @@ class ViewController: UIViewController {
     }
     
     @objc func numberTapped(_ sender : UIButton) {
+        currentPassword.isHidden = true
         hideMessageLabel()
         appendPassword(sender)
         makeColorCircle()
     }
     
+    @objc func showCurrentPassword() {
+        currentPassword.isHidden = false
+        currentPassword.text = "Текущий пароль: \(staticPassword)"
+    }
+    
     @objc func removeLastNum() {
+        currentPassword.isHidden = true
         if !password.isEmpty {
             if password.last == staticPassword[password.count-1] {
                 countSameNumbers -= 1
