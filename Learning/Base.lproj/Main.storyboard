@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,210 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Learning" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRl-fT-DZM">
+                                <rect key="frame" x="65" y="434" width="81" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="1" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="Impact" family="Impact" pointSize="30"/>
+                                    <color key="baseForegroundColor" systemColor="viewFlipsideBackgroundColor"/>
+                                    <color key="baseBackgroundColor" red="1" green="0.46694302720000003" blue="0.45870535709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N73-Kt-f2o">
+                                <rect key="frame" x="90" y="315" width="47" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule">
+                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4i-f8-yQe">
+                                <rect key="frame" x="145" y="315" width="47" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule">
+                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bg2-uX-1M3">
+                                <rect key="frame" x="200" y="315" width="47" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule">
+                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Mv-mB-40l">
+                                <rect key="frame" x="255" y="315" width="47" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule">
+                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhi-nd-cpq">
+                                <rect key="frame" x="153" y="434" width="81" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="2" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="Impact" family="Impact" pointSize="30"/>
+                                    <color key="baseForegroundColor" systemColor="viewFlipsideBackgroundColor"/>
+                                    <color key="baseBackgroundColor" red="1" green="0.46694302720000003" blue="0.45870535709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dl-8H-kOy">
+                                <rect key="frame" x="247" y="434" width="81" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="3" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="Impact" family="Impact" pointSize="30"/>
+                                    <color key="baseForegroundColor" systemColor="viewFlipsideBackgroundColor"/>
+                                    <color key="baseBackgroundColor" red="1" green="0.46694302720000003" blue="0.45870535709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E66-Hz-Xyz">
+                                <rect key="frame" x="65" y="523" width="81" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="4" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="Impact" family="Impact" pointSize="30"/>
+                                    <color key="baseForegroundColor" systemColor="viewFlipsideBackgroundColor"/>
+                                    <color key="baseBackgroundColor" red="1" green="0.46694302720000003" blue="0.45870535709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dlt-WI-B5M">
+                                <rect key="frame" x="154" y="523" width="81" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="5" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="Impact" family="Impact" pointSize="30"/>
+                                    <color key="baseForegroundColor" systemColor="viewFlipsideBackgroundColor"/>
+                                    <color key="baseBackgroundColor" red="1" green="0.46694302720000003" blue="0.45870535709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qMJ-dK-yUq">
+                                <rect key="frame" x="247" y="523" width="81" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="6" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="Impact" family="Impact" pointSize="30"/>
+                                    <color key="baseForegroundColor" systemColor="viewFlipsideBackgroundColor"/>
+                                    <color key="baseBackgroundColor" red="1" green="0.46694302720000003" blue="0.45870535709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2p-ar-HIC">
+                                <rect key="frame" x="65" y="612" width="81" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="7" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="Impact" family="Impact" pointSize="30"/>
+                                    <color key="baseForegroundColor" systemColor="viewFlipsideBackgroundColor"/>
+                                    <color key="baseBackgroundColor" red="1" green="0.46694302720000003" blue="0.45870535709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dp-4F-zDB">
+                                <rect key="frame" x="156" y="612" width="81" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="8" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="Impact" family="Impact" pointSize="30"/>
+                                    <color key="baseForegroundColor" systemColor="viewFlipsideBackgroundColor"/>
+                                    <color key="baseBackgroundColor" red="1" green="0.46694302720000003" blue="0.45870535709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QHg-72-wqR">
+                                <rect key="frame" x="156" y="701" width="81" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="0" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="Impact" family="Impact" pointSize="30"/>
+                                    <color key="baseForegroundColor" systemColor="viewFlipsideBackgroundColor"/>
+                                    <color key="baseBackgroundColor" red="1" green="0.46694302720000003" blue="0.45870535709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ve-gf-Ov4">
+                                <rect key="frame" x="247" y="612" width="81" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="9" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="Impact" family="Impact" pointSize="30"/>
+                                    <color key="baseForegroundColor" systemColor="viewFlipsideBackgroundColor"/>
+                                    <color key="baseBackgroundColor" red="1" green="0.46694302720000003" blue="0.45870535709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Введите пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccC-nD-y52">
+                                <rect key="frame" x="94" y="100" width="205" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Неправильный пароль" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zde-K6-Lmu">
+                                <rect key="frame" x="16" y="190" width="361" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxJ-K3-Rja">
+                                <rect key="frame" x="65" y="701" width="81" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="trash.fill" catalog="system" cornerStyle="capsule">
+                                    <color key="baseBackgroundColor" red="1" green="0.46694302720000003" blue="0.45870535709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ljg-C7-Wjn">
+                                <rect key="frame" x="247" y="701" width="81" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="delete.left.fill" catalog="system" cornerStyle="capsule">
+                                    <color key="baseBackgroundColor" red="1" green="0.46694302720000003" blue="0.45870535709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="0.96078431369999995" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
+                    <connections>
+                        <outlet property="clearButton" destination="sxJ-K3-Rja" id="bbB-pV-YV5"/>
+                        <outlet property="firstCircle" destination="N73-Kt-f2o" id="rMl-aG-TGZ"/>
+                        <outlet property="fourthCircle" destination="4Mv-mB-40l" id="lbm-Pw-0jl"/>
+                        <outlet property="labelEnterPassword" destination="ccC-nD-y52" id="0U5-ty-WAw"/>
+                        <outlet property="numberEight" destination="1dp-4F-zDB" id="ZbV-dH-mvM"/>
+                        <outlet property="numberFive" destination="Dlt-WI-B5M" id="aP4-ac-qpi"/>
+                        <outlet property="numberFour" destination="E66-Hz-Xyz" id="qId-1r-vFy"/>
+                        <outlet property="numberNine" destination="2ve-gf-Ov4" id="aqM-AQ-297"/>
+                        <outlet property="numberNull" destination="QHg-72-wqR" id="pDD-xP-qTM"/>
+                        <outlet property="numberOne" destination="fRl-fT-DZM" id="d9Z-ED-lt6"/>
+                        <outlet property="numberSeven" destination="a2p-ar-HIC" id="UHK-iN-pg1"/>
+                        <outlet property="numberSix" destination="qMJ-dK-yUq" id="CqG-S4-6cn"/>
+                        <outlet property="numberThree" destination="1dl-8H-kOy" id="aN4-cc-Ylw"/>
+                        <outlet property="numberTwo" destination="jhi-nd-cpq" id="leA-Vt-3Ou"/>
+                        <outlet property="removeLastNumber" destination="ljg-C7-Wjn" id="jjy-Tz-Fvz"/>
+                        <outlet property="secondCircle" destination="i4i-f8-yQe" id="H8K-BS-ijN"/>
+                        <outlet property="sucessfulLabel" destination="zde-K6-Lmu" id="ujv-56-KZ0"/>
+                        <outlet property="thirdCircle" destination="Bg2-uX-1M3" id="78t-MX-SjB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="20.610687022900763" y="-2.1126760563380285"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="delete.left.fill" catalog="system" width="128" height="102"/>
+        <image name="trash.fill" catalog="system" width="117" height="128"/>
+        <systemColor name="viewFlipsideBackgroundColor">
+            <color red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
