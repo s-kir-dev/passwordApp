@@ -56,9 +56,13 @@ class FirstViewController: UIViewController {
         var staticPassword : [Int] = [1, 2, 3, 4]
         
         var countSameNumbers = 0
-        
+    
+        var circlesArray : [UIButton] = []
+    
         override func viewDidLoad() {
             super.viewDidLoad()
+            
+            circlesArray = [firstCircle, secondCircle, thirdCircle, fourthCircle]
             
             let numberButtons : [UIButton] = [numberOne, numberTwo, numberThree, numberFour, numberFive, numberSix, numberSeven, numberEight, numberNine, numberNull]
             
@@ -86,7 +90,6 @@ class FirstViewController: UIViewController {
         }
     
         func showSuccessfulLabel(_ hide : Bool = false) {
-            let circlesArray : [UIButton] = [firstCircle, secondCircle, thirdCircle, fourthCircle]
             sucessfulLabel.isHidden = hide
             for circle in circlesArray {
                 circle.isHidden = !hide
@@ -97,6 +100,8 @@ class FirstViewController: UIViewController {
             if password.count < 4 {
                 if let title = button.titleLabel?.text {
                     password.append(Int(title)!)
+                    circlesArray[password.count-1].titleLabel?.text = title
+                    circlesArray[password.count-1].titleLabel?.textColor = .white
                 }
             }
             
@@ -122,23 +127,25 @@ class FirstViewController: UIViewController {
         }
         
         @objc func clearButtonTapped() {
+            for circle in 0..<password.count {
+            circlesArray[circle].titleLabel?.textColor = .black
+            }
             currentPassword.isHidden = true
             showSuccessfulLabel(true)
             hideMessageLabel(false)
-            makeColorCircle(0.3)
             password.removeAll()
+            makeEveryCircleGray()
             countSameNumbers = 0
+            
         }
         
         func makeColorCircle(_ alpha : Double = 1) {
-            let circlesArray : [UIButton] = [firstCircle, secondCircle, thirdCircle, fourthCircle]
             for circle in 0..<password.count {
                 circlesArray[circle].alpha = alpha
             }
         }
         
         func makeEveryCircleGray() {
-            let circlesArray : [UIButton] = [firstCircle, secondCircle, thirdCircle, fourthCircle]
             for circle in circlesArray {
                 circle.alpha = 0.3
             }
@@ -153,7 +160,7 @@ class FirstViewController: UIViewController {
         
         @objc func showCurrentPassword() {
             currentPassword.isHidden = !currentPassword.isHidden
-                currentPassword.text = "Текущий пароль: \(staticPassword)"
+            currentPassword.text = "Текущий пароль: \(staticPassword)"
         }
         
         @objc func removeLastNum() {
@@ -167,7 +174,7 @@ class FirstViewController: UIViewController {
                 makeColorCircle()
                 showSuccessfulLabel(true)
             }
-            
+            circlesArray[password.count].titleLabel?.textColor = .black
             if password.isEmpty {
                 hideMessageLabel(false)
             }
